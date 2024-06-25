@@ -1,5 +1,8 @@
 package modules.easyProblems.strings;
 
+/**
+ * A program to sprint requested number of Fibonacci number series.
+ */
 public class FibonacciSeriesTest {
 
 
