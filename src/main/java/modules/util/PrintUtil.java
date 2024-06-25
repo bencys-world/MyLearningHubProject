@@ -4,13 +4,12 @@ public class PrintUtil {
 
 
     public static void print(int[] numbers) {
-        StringBuffer values = null;
+        StringBuffer values;
         if(numbers!=null) {
 
             values = new StringBuffer();
-            for(int i=0;i<numbers.length;i++) {
-                values.append(numbers[i]);
-                values.append("  ");
+            for(int each: numbers) {
+                values.append(each).append(" ");
             }
 
             System.out.println(values);
