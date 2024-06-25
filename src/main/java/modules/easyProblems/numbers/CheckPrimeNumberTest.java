@@ -1,4 +1,4 @@
-package modules.easyProblems.strings.numbers;
+package modules.easyProblems.numbers;
 
 public class CheckPrimeNumberTest {
 
