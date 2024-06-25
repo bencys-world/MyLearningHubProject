@@ -13,7 +13,7 @@ public class CheckPrimeNumberTest {
             }
         }
 
-        return   (isFactor)? false:true;
+        return   !isFactor;
 
 
 
