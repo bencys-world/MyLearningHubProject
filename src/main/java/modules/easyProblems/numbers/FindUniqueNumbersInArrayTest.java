@@ -20,9 +20,9 @@ public class FindUniqueNumbersInArrayTest {
         }
 
         Integer[] numbers = Arrays.stream(array).boxed().toArray(Integer[] :: new);
-        HashSet<Integer> uniqueList = new HashSet<Integer>();
+        HashSet<Integer> uniqueList = new HashSet<>();
         Collections.addAll(uniqueList,numbers);
-        List<Integer> list = new ArrayList<Integer>(uniqueList);
+        List<Integer> list = new ArrayList<>(uniqueList);
         Collections.sort(list);
 
         System.out.println("Unique numbers in   is as below ...");
