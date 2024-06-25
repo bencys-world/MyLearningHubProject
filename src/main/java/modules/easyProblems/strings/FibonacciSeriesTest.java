@@ -16,7 +16,7 @@ public class FibonacciSeriesTest {
 
         int prev=0;
         int curr =1;
-        int temp =0;
+        int temp;
         System.out.println("**********************************");
         System.out.println(" FibonacciSeries are as follows.... N= "+n);
         for (int i=1;i<=n;i++){
