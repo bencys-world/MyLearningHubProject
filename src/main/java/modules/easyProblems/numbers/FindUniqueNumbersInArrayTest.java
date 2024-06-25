@@ -25,7 +25,7 @@ public class FindUniqueNumbersInArrayTest {
         List<Integer> list = new ArrayList<>(uniqueList);
         Collections.sort(list);
 
-        System.out.println("Unique numbers in   is as below ...");
+        System.out.println("Unique numbers in   is as below .....");
         PrintUtil.print(array);
         for(Integer each : list) {
             System.out.println(each);
