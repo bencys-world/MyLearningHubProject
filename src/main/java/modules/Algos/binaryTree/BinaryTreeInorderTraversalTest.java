@@ -23,7 +23,7 @@ class Node {
 
 public class BinaryTreeInorderTraversalTest {
 
-    Node root;
+    private Node root;
 
     public BinaryTreeInorderTraversalTest() {
         root = null;
