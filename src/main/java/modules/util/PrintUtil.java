@@ -1,5 +1,7 @@
 package modules.util;
 
+import java.util.ArrayList;
+
 public class PrintUtil {
 
 
@@ -15,5 +17,14 @@ public class PrintUtil {
             System.out.println(values);
         }
 
+    }
+
+    public static void print(ArrayList<String> data) {
+
+        if(data == null )  return;
+
+        for(String each : data) {
+            System.out.println(each);
+        }
     }
 }
