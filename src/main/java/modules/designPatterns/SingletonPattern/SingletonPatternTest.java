@@ -1,6 +1,5 @@
 package modules.designPatterns.SingletonPattern;
 
-import com.google.gson.internal.bind.util.ISO8601Utils;
 
 /**
  * Singleton class
@@ -11,8 +10,8 @@ import com.google.gson.internal.bind.util.ISO8601Utils;
  */
 public class SingletonPatternTest {
 
-    private String data= null;
-    private static volatile  SingletonPatternTest  obj = null;
+    private String data;
+    private static volatile  SingletonPatternTest  obj;
 
     private SingletonPatternTest(String data) {
 
@@ -32,15 +31,18 @@ public class SingletonPatternTest {
         }else {
             tempObj.data =  obj.data = data;
         }
-        System.out.println(tempObj.data);
+
         return tempObj;
     }
 
     public static void main(String[] args) {
 
-        SingletonPatternTest.getInstance("Bency");
-        SingletonPatternTest.getInstance("Christine");
-        SingletonPatternTest.getInstance("June");
+        SingletonPatternTest returnObj= SingletonPatternTest.getInstance("Bency");
+        System.out.println(returnObj.data);
+        returnObj= SingletonPatternTest.getInstance("Christine");
+        System.out.println(returnObj.data);
+        returnObj= SingletonPatternTest.getInstance("June");
+        System.out.println(returnObj.data);
 
     }
 
