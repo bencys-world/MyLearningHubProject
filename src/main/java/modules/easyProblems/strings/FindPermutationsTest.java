@@ -16,8 +16,8 @@ public class FindPermutationsTest {
 
     public static ArrayList<String> permutations(String str) {
 
-        ArrayList<String> combos = new ArrayList<String>();
-        if(str == null || str.length()==0 ) return combos;
+        ArrayList<String> combos = new ArrayList<>();
+        if(str == null || str.isEmpty()) return combos;
         findCombos(str.toCharArray(),0,combos);
         return combos;
     }
